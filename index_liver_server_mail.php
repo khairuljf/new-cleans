@@ -23,18 +23,19 @@
         $mail = new PHPMailer;
         // SMTP configuration
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
+        $mail->Host = 'altar34.supremepanel34.com';
+ 
         $mail->SMTPAuth = true;
-        $mail->Username = 'talk2twome@gmail.com';
-        $mail->Password = '01749677671';
-        $mail->SMTPSecure = 'tls';
-        $mail->Port = 587;
-        $mail->setFrom('info@example.com', 'Neu Website');
-        $mail->addReplyTo('info@example.com', 'Neu Website');
+        $mail->Username = 'admin@neucleans.com';
+        $mail->Password = 'securepassword912';
+        $mail->SMTPSecure = 'ssl';
+        $mail->Port = 465;
+        $mail->setFrom('admin@neucleans.com', 'Neu mail form neucleans.com');
+        $mail->addReplyTo('admin@neucleans.com', 'Neu Website');
         // Add a recipient
-        $mail->addAddress('khairuljf@gmail.com');
+        $mail->addAddress('sales@neucleans.com');
         // Email subject
-        $mail->Subject = 'New Mail from Your Website ';
+        $mail->Subject = 'New Mail from neucleans.com ';
         // Set email format to HTML
         $mail->isHTML(true);
         // Email body content
